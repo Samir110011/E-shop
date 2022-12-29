@@ -1,0 +1,126 @@
+.footer{
+	width: 100%;
+	max-width: 1500px;
+	background-color: #030020;
+	bottom: 0px;
+	height: auto;
+	position: relative;
+	padding-top: 1px;
+}
+
+.foot-box-1{
+	margin: 0% 10%;
+	padding-top: 1px;
+	padding-bottom: 50px;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.foot-boxes{
+	width: 210px;
+	margin-top: 50px;
+}
+
+.foot-boxes li{
+	list-style: none;
+	margin: 5px 0px;
+	display: flex;
+}
+
+.foot-boxes li h1{
+	color: white;
+	font-size: 18px;
+}
+
+.foot-boxes li a{
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.foot-boxes li a:hover{
+	text-decoration: underline;
+}
+
+.foot-boxes li p{
+	color: white;
+}
+
+#social-media-icon{
+	color: white;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.app{
+	width: auto;
+	margin-top: 50px;
+}
+
+.app h2{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+.app img{
+	width: 210px;
+	height: auto;
+}
+
+.nation{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 20px 0px;
+}
+
+.nation img{
+	height: 40px;
+	width: 40px;
+	margin-left: 10px;
+}
+
+.copy-right{
+	width: 100%;
+	background-color: black;
+}
+
+.copy-right p{
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	padding: 5px 0px;
+}
+
+/* responsive less then 1100 px device  */
+@media only screen and (max-width: 1100px){
+.foot-box-1{
+	margin: 0px 8%;
+}
+
+.app{
+	display: none;	
+}
+
+}
+
+/* responsive less then 700 px device  */
+@media only screen and (max-width: 700px){
+
+.foot-box-1{
+	margin: 0px 10%;
+	display: block;
+	
+}
+
+.foot-boxes{
+	width: 100%;
+}
+
+}

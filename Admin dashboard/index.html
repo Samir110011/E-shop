@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-shop admin dashboard</title>
+
+	<!-- icon image -->
+	<link rel="icon" type="image/png" href="image/logo/iconlogo.png">
+
+	<!-- css links -->
+	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<!-- google icon & fonts link -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+	<!-- main content -->
+<section class="whole-content">
+
+<hr class="top-hr">
+
+	<!-- navbar -->
+<div class="navbar" id="navbar">
+	<div class="head">
+		<button onclick="openClicked()" id="open">
+			<i class="icon material-symbols-outlined">reorder</i>
+		</button>
+		<button onclick="closeClicked()" id="close">
+			<i class="icon material-symbols-outlined">close</i>
+		</button>
+		<h3>DASHBOARD</h3>
+	</div>
+	<div class="dropdown">
+		<input type="checkbox" id="checkbox-1">
+		<label for="checkbox-1" class="dropbtn">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5LKpN_54ydjIAHfQB_8jyYb4_LtYYerwQR_6vGgTWdn2sVdEfUsIYv0ru-pUsRrzX-iI&usqp=CAU" alt="">
+			<i class="material-symbols-outlined">arrow_drop_down</i>
+		</label>
+		<ul class="dropdown-content">
+			<li><a href="#"><i class="material-symbols-outlined">account_circle</i>My Account</a></li>
+			<li><a href="#"><i class="material-symbols-outlined">settings</i>Account Setting</a></li>
+			<li><a href="#"><i class="material-symbols-outlined">logout</i>Logout</a></li>
+		</ul>
+	</div>
+</div>
+
+	<!-- sidebar -->
+<div class="sidebar" id="sidebar">
+	<div class="top">
+		<a href="index.html">
+			<img src="logo/logo.png" alt="">
+		</a>
+	</div>
+	<hr class="hr1">
+	<ul>
+		<a href="index.html" class="active-link"><i class="link-icon material-symbols-outlined">dashboard</i><h6>DASHBOARD</h6></a>
+		<a href="#"><i class="link-icon material-symbols-outlined">insert_chart</i><h6>ANALYTICS</h6></a>
+		
+	</ul>
+</div>
+
+	<!-- dashboad content -->
+<div class="content" id="content">
+	<div class="box-1">
+		<div class="col">
+			<div class="title-holder">
+				<label class="icon-holder" style="background-color: #ff8d72;">
+					<i class="icon-2 material-symbols-outlined">group</i>
+				</label>
+				<p>Usres</p>
+			</div>
+			<div class="output-num">
+				<h2>123456</h2>
+			</div>
+		</div>
+		<div class="col">
+			<div class="title-holder">
+				<label class="icon-holder" style="background-color: #e14eca;">
+					<i class="icon-2 material-symbols-outlined">person</i>
+				</label>
+				<p>Sellers</p>
+			</div>
+			<div class="output-num">
+				<h2>123456</h2>
+			</div>
+		</div>
+		<div class="col">
+			<div class="title-holder">
+				<label class="icon-holder" style="background-color: #00f2c3;">
+					<i class="icon-2 material-symbols-outlined">widgets</i>
+				</label>
+				<p>Products</p>
+			</div>
+			<div class="output-num">
+				<h2>123456</h2>
+			</div>
+		</div>
+		<div class="col">
+			<div class="title-holder">
+				<label class="icon-holder" style="background-color: #f5365c;">
+					<i class="icon-2 material-symbols-outlined">attach_money</i>
+				</label>
+				<p>Revenue</p>
+			</div>
+			<div class="output-num">
+				<h2>123456</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+</body>
+
+	<!-- java script link -->
+<script src="js/click.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+$(function () {
+  "use strict";
+  
+  function uncheckBox() {
+    var isChecked = $("#checkbox-1").prop("checked");
+    if (isChecked) {
+      $("#checkbox-1").prop("checked", false);
+    }
+  }
+  
+  $("body").on("click", function () {
+    uncheckBox();
+  });
+  
+  $("#checkbox-1,label").on("click", function (e) {
+    e.stopPropagation();
+  });
+});
+</script>
+</html>

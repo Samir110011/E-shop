@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>E-shop admin signup</title>
+	<link rel="icon" type="image/png" href="logo/iconlogo.png"><!-- icon image -->
+    <link rel="stylesheet" type="text/css" href="css/signup.css"><!-- signup style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"><!-- bootstrap link -->
+</head>
+<body>
+
+<!-- content -->
+<section class="main">
+    
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="#"><img src="logo/logo.png"></a>
+    </div>
+
+    <!-- register content -->
+    <div class="content-main">
+        <div class="content">
+            <h1>ADMIN SIGNUP</h1>
+            <form method="POST" action="">
+
+                <!-- Name -->
+                <div class="content-1">
+                    <label class="text">Name</label>
+                    <input class="input-box" type="text" name="name" :value="old('name')" placeholder="Enter your full name" required autofocus>
+                    <x-input-error :messages="$errors->get('name')" class="error" />
+                </div>
+
+                <!-- Email Address -->
+                <div class="content-1">
+                    <label class="text">Email</label>
+                    <input class="input-box" type="email" name="email" :value="old('email')" placeholder="Enter your email" required>
+                    <x-input-error :messages="$errors->get('email')" class="error" />
+                </div>
+
+                 <!-- Password -->
+                <div class="content-1">
+                    <label class="text">Password</label>
+                    <input class="input-box" type="password" name="password" required autocomplete="new-password" placeholder="Enter new password" id="myInput">
+                    <label class="show-password"  for="check-box-1" for="check-box-2">
+                        <i class="bi bi-eye-slash" id="hide-password"></i>
+                        <i class="bi bi-eye" id="show-password"></i>
+                    </label>
+                    <input id="check-box-1" type="checkbox" onclick="myFunction()">
+                    <x-input-error :messages="$errors->get('password')" class="error" />
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="content-1">
+                    <label class="text">Confirm Password</label>
+                    <input class="input-box" type="password" name="password_confirmation" placeholder="Confirm your password" required id="myInput-2" >
+                    <x-input-error :messages="$errors->get('password_confirmation')" class="error"/>
+                </div>
+
+                <input type="text" name="profile_image" value="/images/default_profile.jpg" style="display:none;">
+                <!-- button -->
+                <button class="button-1" type="submit">Sign up</button>
+            </form>
+
+            <!-- login -->
+            <div class="content-3">
+                <a href="index.html">Already registered?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+    © E-shop.com.np 2022
+    </div>
+</section>
+
+<script type="text/javascript" src="js/signup.js"></script><!-- java script -->
+</body>
+</html>

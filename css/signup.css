@@ -1,0 +1,202 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+/* login content starts */
+.login-background{
+  position: absolute;
+  width: 100%;
+  max-width: 1500px;
+  height: 100vh;
+  background-image: linear-gradient(60deg, #2FFEF8, #FE2FF1);
+}
+
+/* login navbar starts */
+.navbar{
+  background: #030020;
+  height: 60px;
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.navbar a{
+  margin-left: 20px;
+  height: 50px;
+  width: auto;
+}
+
+.navbar a img{
+  height: 100%;
+  width: auto;
+}
+/* login navbar ends */
+
+/* form holder div starts */
+.main{
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+/* login form box starts*/
+.content-box{
+  max-width: 350px;
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  margin: 0px 10px;
+}
+
+.content-box h1{
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #030020;
+}
+
+.content-box form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.content-box-1{
+  width: 100%;
+  height: 90px;
+}
+
+.content-box-1 label{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #030020;
+}
+
+.block{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 5%;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+}
+
+.mt-2{
+  margin-top: 2px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: red;
+}
+
+/* login button */
+.ml-4{
+  margin-top: 0px;
+  height: 45px;  
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #030020;
+}
+
+.ml-4:hover{
+  background: skyblue;
+}
+
+/* signup */
+.content-box-4{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-box-4 a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #041254;
+  font-weight: 600;
+}
+
+.content-box-4:hover{
+  text-decoration: underline;
+}
+
+/* login form box ends*/
+/* form holder div starts */
+/* login content ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive less then 1100 px device  */
+@media only screen and (max-width: 1100px){
+/* login content starts */
+/* login navbar starts */
+.navbar{
+  background: #030020;
+  height: 50px;
+}
+
+.navbar a{
+  height: 40px;
+}
+/* login navbar ends */
+
+/* form holder div starts */
+/* login form box starts*/
+
+/* login form box ends*/
+/* form holder div starts */
+/* login content ends */
+}
+
+/* responsive less then 1100 px device  */
+@media only screen and (max-width: 1100px){
+/* login content starts */
+/* login navbar starts */
+.navbar a{
+  margin-left: 10px;
+}
+/* login navbar ends */
+
+/* form holder div starts */
+/* login form box starts*/
+
+/* login form box ends*/
+/* form holder div starts */
+/* login content ends */
+}
+}

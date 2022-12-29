@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-shop costumer login</title>
+  <!-- icon image -->
+  <link rel="icon" type="image/png" href="image/logo/iconlogo.png">
+
+  <!-- css link -->
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+
+  <!-- google icon & fonts link -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+ <!-- content -->
+<section class="main">
+
+  <!-- navbar -->
+  <div class="navbar">
+      <a href="../index.html"><img src="image/logo/logo.png"></a>
+  </div>
+
+  <!-- Login form -->
+  <div class="login-form-holder">
+    <div class="content">
+      <div class="box-1">
+        <h1>COSTUMER LOGIN</h1>
+
+        <!-- <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <strong>Plz login first</strong>
+        </div> -->
+
+        <form action="" method="post">
+
+          <!-- Email Address -->
+          <div class="content-1">
+            <label class="text">Email</label>
+            <input class="input-box" type="email" name="email" :value="old('email')" placeholder="Enter your email" required autofocus />
+          </div>
+
+          <!-- Password -->
+          <div class="content-1">
+            <label class="text">Password</label>
+            <input class="input-box" type="password" name="password" required autocomplete="current-password" placeholder="Enter your password" id="myInput">
+            <label class="show-password" for="check-box-1">
+                <i class="bi material-symbols-outlined" id="hide-password">visibility_off</i>
+                <i class="bi material-symbols-outlined" id="show-password">visibility</i>
+            </label>
+            <input id="check-box-1" type="checkbox" onclick="myFunction()">
+          </div>
+
+          <!-- Remember Me -->
+          <div class="content-2">
+            <input id="remember_me" type="checkbox" name="remember">
+            <label for="remember_me" class="text">Remember me</label>
+          </div>
+
+          <!-- button -->
+          <button type="submit" class="button-1">
+            Log in
+          </button>
+
+        </form>
+
+        <!-- forgot password -->
+        <div class="content-3">
+          <a href="#">
+              Forgot your password?
+          </a>
+        </div>
+
+            <!-- signup -->
+        <div class="content-4">
+          <a href="signup.html" >Create new account</a>
+        </div>
+
+      </div>
+      <div class="box-2">
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    © E-shop.com.np 2022
+  </div>
+</section>
+</body>
+
+<!-- js link -->
+<script src="js/login.js"></script>
+
+</html>

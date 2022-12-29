@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Navbar style starts */
+.navbar{
+	position: fixed;
+	background: #030020; /* Navbar background color */
+	height: 60px;
+	width: 100%;
+	max-width: 1500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999;
+	transition: transform 0.2s ease;
+}
+
+.navbar-hide{
+	transform: translateY(-50px);
+}
+
+/* div for logo */
+.logo-div{
+	height: 50px;
+	width: auto;
+	margin-left: 20px;
+}
+
+/* logo image */
+.logo-div a img{
+	height: 100%;
+	width: auto;
+}
+
+/* div for search */
+.search-div{
+	height: 40px;
+	width: 60%;
+	display: flex;
+}
+
+/* search box */
+.search-div input{
+	border-style: none;
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	padding-left: 20px;
+}
+
+/* div for search icon */
+.search-icon-div{
+	background: #FF5F03;/* search icon background color */
+	padding: 0px 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border-style: none;
+}
+
+.search-icon-div:hover{
+	background: skyblue;/* search icon background hover color */
+}
+
+/* search icon */
+.bi-search{
+	font-size: 25px;
+	color: white;
+}
+
+/* div for cart */
+.cart-div{
+	cursor: pointer;
+	height: 40px;
+	width: auto;
+	margin-left: 20px;
+	display: flex;
+	align-items: baseline;
+	color: white;
+}
+
+.cart-div:hover{
+	color: skyblue;
+}
+
+/* cart icon */
+.bi-cart3{
+	font-size: 38px;
+}
+
+/* text */
+.cart-div label{
+	font-size: 12px;
+	font-weight: 700;
+}
+
+/* div for profile */
+.profile-box{
+	height: 40px;
+	width: auto;
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+/* sign in link */
+.profile-box a{
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+	background: white;
+	border-radius: 20px;
+	color: #030020;
+	font-weight: 600;
+}
+
+.profile-box a:hover{
+	background: skyblue;
+	color: white;
+}
+
+/* profile icon */
+.bi-person-circle{
+	margin-right: 5px;
+	font-size: 30px;
+}
+
+/* Navbar style ends */
+
+/* Lower-avbar starts */
+.lower-navbar{
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	max-width: 1500px;
+	z-index: 998;
+	height: 40px;
+	background: white;
+	display: flex;
+	align-items: center;
+	transition: transform 0.2s ease;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.lower-navbar-hide{
+	transform: translateY(-40px);
+}
+
+/* div for category */
+.menu-div{
+	background: #FF5F03;
+	height: 35px;
+	width: auto;
+	margin-left: 20px;
+	display: flex;
+	align-items: center;
+	padding-top: 5px;
+}
+
+.menu-div:hover{
+	background: skyblue;
+}
+
+/* label for icon */
+.menu-div label{
+	cursor: pointer;
+}
+
+#check-box-1:checked ~ .menu{
+	display: flex;
+}
+
+#check-box-1:checked ~ label .bi-list{
+	display: none;
+}
+
+#check-box-1:checked ~ label .bi-x-lg{
+	display: flex;
+}
+
+/* menu icon */
+.menu-div label i{
+	font-size: 45px;
+	color: white;
+}
+
+/* close icon */
+.bi-x-lg{
+	display: none;
+}
+
+/* categories menu */
+.menu{
+	position: fixed;
+	background: white;
+	margin-top: 437px;
+	margin-left: -19px;
+	width: 200px;
+	height: 400px;
+	overflow-y: scroll;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #030020;
+	display: none;
+}
+
+/* link holder */
+.menu ul{
+	width: 100%;
+}
+
+/* link */
+.menu ul a{
+	display: block;
+	font-size: 17px;
+	color: #030020;
+	font-family: Arial;
+}
+
+.menu ul a:hover{
+	background: gray;
+	color: white;
+}
+/* div for link 2 */
+.link-2{
+	height: 32px;
+	width: auto;
+	margin-left: 20px;
+}
+
+/* link holder */
+.link-2 ul{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/* links */
+.link-2 ul a{
+	font-size: 16px;
+	font-weight: 700;
+	border-style: solid;
+	padding: 2px 20px;
+	border-width: 3px;
+	margin-left: -3px;
+	border-color: transparent;
+	font-family: 'Open Sans', sans-serif;
+	color: #030020;
+}
+
+.link-2 ul a:hover{
+	border-color: #030020;
+}
+/* Lower-avbar ends */
+
+
+/* mobile navbar starts */
+.mobile-navbar{
+	width: 100%;
+	max-width: 1100px;
+	height: 50px;
+	background: #030020;
+	position: fixed;
+	bottom: 0px;
+	z-index: 999;
+	transition: transform 0.2s ease;
+	display: none;
+	align-items: center;
+}
+
+.mobile-navbar-hide{
+	transform: translateY(50px);
+}
+
+/* mobile navbar link holder */
+.mobile-navbar ul{
+	height: 40px;
+	display: flex;
+	margin: 0% 10%;
+	width: 80%;
+	justify-content: space-between;
+}
+
+/* link */
+.mobile-navbar ul a{
+	color: white;
+	text-align: center;
+}
+
+/* icon */
+.mobile-navbar ul a i{
+	font-size: 25px;
+}
+
+/* text */
+.mobile-navbar ul a p{
+	font-size: 10px;
+}
+
+/* mobile navbar ends */
+
+/* responsive less then 1100 px device  */
+@media only screen and (max-width: 1100px){
+/* Navbar style starts */
+.navbar{
+	height: 50px;
+}
+
+/* div for logo */
+.logo-div{
+	height: 40px;
+}
+
+/* div for search */
+.search-div{
+	position: absolute;
+	height: 50px;
+	align-items: center;
+	width: 100%;
+	top: 50px;
+	background: skyblue;
+}
+
+/* search box */
+.search-div input{
+	height: 40px;
+	margin-left: 20px;
+}
+
+/* div for search icon */
+.search-icon-div{
+	height: 40px;
+	margin-right: 20px;
+}
+
+/* div for cart */
+.cart-div{
+	display: none;
+}
+
+/* div for profile */
+.profile-box{
+	display: none;
+}
+/* Navbar style ends */
+
+/* Lower-avbar starts */
+.lower-navbar{
+	display: none;
+}
+/* Lower-avbar ends */
+
+/* mobile navbar starts */
+.mobile-navbar{
+	display: flex;
+}
+/* mobile navbar ends */
+}
+
+/* responsive less then 700 px device  */
+@media only screen and (max-width: 700px){
+
+/* div for logo */
+.logo-div{
+	margin-left: 10px;
+}
+
+/* search box */
+.search-div input{
+	margin-left: 10px;
+}
+
+/* div for search icon */
+.search-icon-div{
+	margin-right: 10px;
+}
+
+
+
+}
